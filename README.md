@@ -5,7 +5,7 @@ Il permet aussi une gestion simple des employés de cette sociétée .
 
 ## Etat du projet
 
-ce jour , toute la partie back-end du projet est terminé 
+A ce jour , toute la partie back-end du projet est terminé 
 Il serai envisagable de revoir la partie front du projet afin d'apporter une meilleur navigation à l'utilisateur
 Une verification avec Javascript apporterai un confort supplementaire a l'utilisateur
 
