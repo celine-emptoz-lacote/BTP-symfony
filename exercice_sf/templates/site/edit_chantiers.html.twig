@@ -1,0 +1,25 @@
+{% extends "base.html.twig" %}
+
+{% block body %}
+    <h1>Modifier un chantier</h1>
+    {{form_start(form)}}
+        <div class="form-group">
+            {{form_label(form.Nom)}} 
+            {{form_widget(form.Nom)}}
+        </div>
+        <div class="form-group">
+            {{form_label(form.Adresse)}} 
+            {{form_widget(form.Adresse)}}
+        </div>
+        <div class="form-group">
+            {{form_label(form.Date_de_debut)}} 
+            {{form_widget(form.Date_de_debut)}}
+        </div>
+         
+        <div class="form-group">
+            <button type="submit" class="btn btn-success" name="enregistrer">Enregistrer</button>
+        </div>   
+    {{form_end(form)}}      
+
+    <button class="btn_back"><a href="{{ path('chantiers') }}">Retour</a></button>
+{% endblock %}

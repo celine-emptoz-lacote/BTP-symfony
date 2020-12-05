@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ asset('bundles/mercuryseriesflashy/css/flashy.css') }}">
+    <link rel="stylesheet" href="{{ asset('app.css') }}">
+    <link rel="stylesheet" href="{{ asset('fontello/css/fontello.css') }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>{% block title %}Welcome!{% endblock %}</title>
+    {% block stylesheets %}{% endblock %}
+    </head>
+    <body>
+        <header>
+            <nav>
+                <a href="{{path('HomePage')}}" class="icon-home"></a>
+            </nav>
+        </header>
+       
+        <main>
+            {% for message in app.flashes('success') %}
+            <div class="alert alert-success">
+                {{ message }}
+            </div>
+            {% endfor %}
+            {% for message in app.flashes('erreur') %}
+            <div class="alert alert-success">
+                {{ message }}
+            </div>
+            {% endfor %}
+
+        {% block body %}
+           
+
+        
+           
+        {% endblock %}
+        </main>
+      
+        <footer>
+            <p>@Céline EMPTOZ-LACOTE - Etudiante à la Plateforme - Marseille</p>
+
+        </footer>
+        {% block javascripts %}
+           
+        {% endblock %}
+
+       
+    </body>
+</html>
