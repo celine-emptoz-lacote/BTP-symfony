@@ -1,0 +1,16 @@
+{% extends "base.html.twig" %}
+
+{% block title %}Page d'accueil{% endblock %}
+{% block body %}
+    <div class="main">
+        <h1>BTP Symfony</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit perferendis dicta aliquam animi facere magni vel facilis quibusdam in veritatis, sunt quis pariatur? Impedit tenetur labore quae. Odio, expedita sequi?</p>
+        <nav>
+            <a class="btn btn-lg" href="{{ path('employes') }}">Les employés</a>
+            <a class="btn btn-lg" href="{{ path('chantiers') }}">Les chantiers</a>
+            <a class="btn btn-lg" href="{{ path('pointages') }}">Pointage</a>
+        </nav>
+    </div>
+{% endblock %}
+    
+   

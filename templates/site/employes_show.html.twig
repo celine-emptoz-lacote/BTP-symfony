@@ -1,0 +1,38 @@
+{% extends "base.html.twig" %}
+
+{% block title %}Gestion des employés{% endblock %}
+
+{% block body %}
+    <h1>Gestion des employés</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus adipisci molestias in doloribus, nulla culpa soluta! Fugiat consectetur ex ut omnis debitis. Magni esse distinctio officiis nostrum dolore nemo ad.</p>
+    
+       
+  
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Nom</th>
+                <th>Prénom</th>
+                <th>Matricule</th>
+                <th>Mettre a jour</th>
+                <th>Supprimer</th>
+            </tr>
+        </thead> 
+        <tbody>
+        
+        {% for employe in employes %}  
+            <tr>
+                <td>{{ employe.Nom }}</td>
+                <td>{{ employe.Prenom }}</td>
+                <td>{{ employe.Matricule }}</td>
+                <td><button> <a href="{{ path("update", { 'id':employe.id} ) }}" class="btn_update" >Mettre a jour</a></button></td>
+                <td><a href="{{ path("delete", { 'id':employe.id} ) }}" class="icon-user-times" ></a></td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+    <button id="add_worker"><a href=" {{ path("add")}} " class="btn"> Ajouter un employé</a></button>
+
+{% endblock %}
+
+

@@ -1,0 +1,27 @@
+{% extends "base.html.twig" %}
+{% block title %}{{ controller_name }}{% endblock %}
+
+{% block body %}
+
+  
+
+   <h1>{{chantier.Nom}}</h1>
+
+   {% for message in app.flashes('success') %}
+   <div class="alert alert-success">
+      {{ message }}
+   </div>
+   {% endfor %}
+   <div class="main main_grey">
+      <p>{{chantier.adresse}}</p>
+
+      <p><b>Date de début : {{ date }}</b></p>
+   
+      <div class="div_btn">
+         <button class="btn"><a href="{{ path("edit", {"id": chantier.id})}}">Modifier</a></button>
+         <button class=" btn btn_delete"><a href="{{ path("delete_chantier", {"id": chantier.id})}}">Supprimer</a></button>
+      </div>  
+   </div>
+   <button class="btn_back"><a href="{{ path("chantiers") }}">Retour</a></button>  
+           
+{% endblock %}

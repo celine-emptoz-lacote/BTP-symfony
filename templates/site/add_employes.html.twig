@@ -1,0 +1,37 @@
+{% extends "base.html.twig" %}
+{% block title %}Ajouter un employés{% endblock %}
+
+
+{% block body %}
+   
+    {% for message in app.flashes('success') %}
+    <div class="alert alert-success">
+        {{ message }}
+    </div>
+    {% endfor %}
+
+    <h1>Ajouter un employé</h1>
+
+    
+    {{ form_start(form) }}
+        <div class="form-group">
+            {{ form_label(form.Nom)}}
+            {{ form_widget(form.Nom)}}
+        </div>
+        <div class="form-group">
+            {{ form_label(form.Prenom)}}
+            {{ form_widget(form.Prenom)}}
+        </div>
+        <div class="form-group">
+            {{ form_label(form.Matricule)}}
+            {{ form_widget(form.Matricule)}}
+        </div>
+        <div class="form-group">
+            <button type="submit" class="btn btn-success" name="enregistrer">Enregistrer</button>
+        </div>
+
+    {{ form_end(form) }}
+    
+    <button class="btn_back"><a href="{{ path('employes')}}"  >Retour</a></button>
+{% endblock %}
+

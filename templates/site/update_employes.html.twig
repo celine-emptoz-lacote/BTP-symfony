@@ -1,0 +1,34 @@
+{% extends "base.html.twig" %}
+
+{% block title %}Mise à jour employé{% endblock %}
+
+{% block body %}
+
+    <h1>Mise à jour de l'employé</h1>
+
+    {% for message in app.flashes('erreur') %}
+        <div class="alert alert-erreur">
+            {{ message }}
+        </div>
+    {% endfor %}
+
+
+    {{ form_start(form) }}
+        <div class="form-group">
+            {{ form_row(form.Nom ) }}
+        </div>
+        <div class="form-group">
+            {{ form_row(form.Prenom )}}
+        </div>
+        <div class="form-group">
+            {{ form_row(form.Matricule )}}
+        </div>
+        <div class="form-group">
+            <button type="submit" class="btn " name="enregistrer">Enregistrer</button>
+        </div>
+
+    {{ form_end(form) }}
+    
+    <button class="btn_back"><a href="{{ path('employes')}}">Retour</a></button>
+           
+{% endblock %}
