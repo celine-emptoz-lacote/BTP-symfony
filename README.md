@@ -13,4 +13,4 @@ Une verification avec Javascript apporterai un confort supplementaire a l'utilis
 
 ## Outils utilisés
 
-L'objetif de ce projet a été une montée en compétence sur le Framework Symfony. J'ai donc développé ce projet avec .Je me suis aidée de la [documentation officiel ](https://symfony.com/doc/current/index.html), ainsi que certain tutoriels trouvé sur internet. Mon centre de formation [La Plateforme ](https://laplateforme.io/) qui m'a donnée les compétences suffisantes pour pouvoir accomplir seule ce defis. 
+L'objetif de ce projet a été une montée en compétence sur le Framework Symfony. J'ai donc développé ce projet avec .Je me suis aidée de la [documentation officiel ](https://symfony.com/doc/current/index.html), ainsi que certains tutoriels trouvé sur internet. Mon centre de formation [La Plateforme ](https://laplateforme.io/) qui m'a donnée les compétences suffisantes pour pouvoir accomplir seule ce defis. 
