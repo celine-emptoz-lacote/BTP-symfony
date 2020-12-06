@@ -1,7 +1,7 @@
 # BTP-symfony
 
 BTP symfony est un site dédié pour une entreprise de BTP , permettant un enregistrement de chantiers. Il donne la possibilité au gérant d'enregistrer des nouveaux chantiers , la modification de ceux-ci ainsi que leurs suppression .
-Il permet aussi une gestion simple des employés de cette sociétée . 
+Il permet aussi une gestion simple des employés de cette société . 
 
 ## Etat du projet
 
